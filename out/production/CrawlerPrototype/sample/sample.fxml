@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" style="-fx-background-color: #2a2b3c;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+      <Pane fx:id="panelWelcome" layoutX="33.0" layoutY="35.0" prefHeight="315.0" prefWidth="436.0">
+         <children>
+              <Text fill="WHITE" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bienvenue">
+                  <font>
+                      <Font name="Trebuchet MS" size="36.0" />
+                  </font>
+              </Text>
+            <Label layoutX="4.0" layoutY="174.0" prefHeight="19.0" prefWidth="429.0" style="-fx-border-width: 2 0 0 0; -fx-border-color: #2eaa9b;" textFill="RED" />
+              <Text fill="WHITE" layoutY="221.0" lineSpacing="3.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla." wrappingWidth="429.21875" />
+            <ImageView fx:id="logo" fitHeight="150.0" fitWidth="200.0" layoutX="118.0" layoutY="-42.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </Pane>
+        <Pane layoutY="423.0" prefHeight="77.0" prefWidth="500.0">
+            <children>
+                <JFXButton fx:id="pageTele" layoutY="18.0" prefHeight="59.0" prefWidth="249.0" style="-fx-background-color: #2eaa9b;" text="Pages téléchargées" textFill="WHITE">
+                    <font>
+                        <Font name="Trebuchet MS Bold" size="17.0" />
+                    </font>
+                </JFXButton>
+                <JFXButton layoutX="250.0" layoutY="18.0" prefHeight="59.0" prefWidth="249.0" style="-fx-background-color: #d93b70;;" text="Ajouter une page" textFill="WHITE">
+                    <font>
+                        <Font name="Trebuchet MS Bold" size="17.0" />
+                    </font>
+                </JFXButton>
+            </children>
+        </Pane>
+        <FontAwesomeIconView fill="WHITE" glyphName="REMOVE" layoutX="477.0" layoutY="23.0" />
+        <FontAwesomeIconView fill="WHITE" glyphName="WINDOW_MINIMIZE" layoutX="457.0" layoutY="20.0" />
+    </children>
+</Pane>
